@@ -1,0 +1,23 @@
+
+.element{
+    margin-bottom: .5rem;
+}
+.input-form{
+    padding: 0.4rem;
+    outline: none;
+    border: 0;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255,0.4);
+}
+.input-form:focus{
+    border-bottom: 2px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+.label-form{
+    color: rgb(225, 214, 8);
+    font-size: 0.8rem;
+}
+

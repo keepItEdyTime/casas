@@ -1,0 +1,47 @@
+ useEffect(() => {
+    const imagesI: ReactImageGalleryItem[] = [
+      {
+        original: 'http://localhost:8000/storage/homes/cab2023ac1de32b5033c6e28a2fc1a91.jpg',
+        thumbnail: 'http://localhost:8000/storage/homes/cab2023ac1de32b5033c6e28a2fc1a91.jpg',
+        thumbnailHeight: 50,
+        thumbnailWidth: 50,
+        originalClass: isFullScreen ? 'slide-img-full-screen' : 'slide-img'
+      },
+      {
+        original: 'http://localhost:8000/storage/homes/178452a47b07b086ef187fd951f4db22.jpg',
+        thumbnail: 'http://localhost:8000/storage/homes/178452a47b07b086ef187fd951f4db22.jpg',
+        thumbnailHeight: 50,
+        thumbnailWidth: 50,
+        originalClass: isFullScreen ? 'slide-img-full-screen' : 'slide-img'
+      },
+      {
+        original: 'http://localhost:8000/storage/homes/6a45818e6029a29b47a14d6f989715d5.jpg',
+        thumbnail: 'http://localhost:8000/storage/homes/6a45818e6029a29b47a14d6f989715d5.jpg',
+        thumbnailHeight: 50,
+        thumbnailWidth: 50,
+        originalClass: isFullScreen ? 'slide-img-full-screen' : 'slide-img'
+      },
+    ];
+
+    let slug = params.slug
+
+    houseRepository
+      .getBySlug(slug as string)
+      .then(response => {
+        console.log(response)
+        setHousesResponse(response.data.data)
+      })
+      .catch(reject => {
+        alert(reject)
+      })
+      .finally(() => {
+        if (first) {
+          setLoading(false)
+        } else {
+          setInfoLoading(false)
+        }
+      })
+
+    setImages(imagesI)
+
+  }, [isFullScreen])

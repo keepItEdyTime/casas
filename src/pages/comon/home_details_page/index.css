@@ -1,0 +1,27 @@
+.slide-galery{
+    height: 500px;
+}
+
+.slide-img{
+    height: 500px !important;
+    width: 100% !important;
+    background-color: rgb(0, 0, 0);  
+}
+.slide-img-full-screen{
+    height: 100vh !important;
+    width: 100% !important;
+    background-color: rgb(134, 8, 8);  
+}
+.home-information .nav-link{
+    color: white;
+}
+.home-information .nav-link.active{
+    background-color: rgb(227, 154, 43);
+}
+.info-value{
+
+    
+}
+.info-text{
+    height: 1.2rem;
+}

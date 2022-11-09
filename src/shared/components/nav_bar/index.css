@@ -1,0 +1,44 @@
+.nav-item {
+    color: white !important;
+    text-align: center;
+}
+
+.active-item {
+    color: red;
+    border-bottom-width: 2;
+    border-bottom-color: red;
+
+
+}
+
+.btn-none {
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-none:hover {
+    color: black !important;
+    background-color: rgba(0, 0, 0, .1) !important;
+}
+
+.nav-left-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right-center {
+
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-right-center {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

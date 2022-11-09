@@ -1,0 +1,13 @@
+.txt-input{
+    border: none;
+    outline: none;
+}
+.txt-input:focus{
+    outline: none !important;
+    border: none !important;
+    border-bottom: chartreuse 1px solid;
+}
+
+.app-name{
+    font-size: 2rem;
+}

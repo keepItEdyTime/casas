@@ -1,0 +1,53 @@
+.manage-layout{
+    min-height: 100vh;
+}
+
+.manage-side-bar{
+    border-right: 1px solid rgb(176, 173, 173);
+    transition: all .3s;
+}
+.manage-side-bar .sticky-links{
+    position: sticky;
+    top: 4rem;
+}
+.manage-side-bar a{
+    height: 3.2rem;
+    padding-left: 10px;
+    color: rgb(214, 209, 209);
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(147, 146, 146);
+}
+
+.manage-side-bar a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.manage-side-bar .m-btn-close{
+    border: none !important;
+    outline: none !important;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+}
+
+.manage-side-bar .active{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 5px solid rgb(0, 0, 0);
+    
+}
+
+@media screen and (max-width: 1023px) {
+    .manage-side-bar{
+        position: fixed;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .manage-layout{
+       display: flex;
+    }
+}
